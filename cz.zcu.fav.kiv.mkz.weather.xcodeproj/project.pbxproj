@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EF761E1CB2B4CE0002381F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF761D1CB2B4CE0002381F /* main.m */; };
+		03EF76211CB2B4CE0002381F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF76201CB2B4CE0002381F /* AppDelegate.m */; };
+		03EF76241CB2B4CE0002381F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF76231CB2B4CE0002381F /* FirstViewController.m */; };
+		03EF76271CB2B4CE0002381F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF76261CB2B4CE0002381F /* SecondViewController.m */; };
+		03EF762A1CB2B4CE0002381F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EF76281CB2B4CE0002381F /* Main.storyboard */; };
+		03EF762C1CB2B4CE0002381F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03EF762B1CB2B4CE0002381F /* Assets.xcassets */; };
+		03EF762F1CB2B4CE0002381F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03EF762D1CB2B4CE0002381F /* LaunchScreen.storyboard */; };
+		03EF763A1CB2B4CE0002381F /* cz_zcu_fav_kiv_mkz_weatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF76391CB2B4CE0002381F /* cz_zcu_fav_kiv_mkz_weatherTests.m */; };
+		03EF76451CB2B4CF0002381F /* cz_zcu_fav_kiv_mkz_weatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EF76441CB2B4CF0002381F /* cz_zcu_fav_kiv_mkz_weatherUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03EF76361CB2B4CE0002381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EF76111CB2B4CE0002381F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EF76181CB2B4CE0002381F;
+			remoteInfo = cz.zcu.fav.kiv.mkz.weather;
+		};
+		03EF76411CB2B4CF0002381F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03EF76111CB2B4CE0002381F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03EF76181CB2B4CE0002381F;
+			remoteInfo = cz.zcu.fav.kiv.mkz.weather;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EF76191CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cz.zcu.fav.kiv.mkz.weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EF761D1CB2B4CE0002381F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03EF761F1CB2B4CE0002381F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		03EF76201CB2B4CE0002381F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		03EF76221CB2B4CE0002381F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		03EF76231CB2B4CE0002381F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		03EF76251CB2B4CE0002381F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		03EF76261CB2B4CE0002381F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		03EF76291CB2B4CE0002381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03EF762B1CB2B4CE0002381F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03EF762E1CB2B4CE0002381F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03EF76301CB2B4CE0002381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03EF76351CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cz.zcu.fav.kiv.mkz.weatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EF76391CB2B4CE0002381F /* cz_zcu_fav_kiv_mkz_weatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cz_zcu_fav_kiv_mkz_weatherTests.m; sourceTree = "<group>"; };
+		03EF763B1CB2B4CE0002381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03EF76401CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cz.zcu.fav.kiv.mkz.weatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03EF76441CB2B4CF0002381F /* cz_zcu_fav_kiv_mkz_weatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cz_zcu_fav_kiv_mkz_weatherUITests.m; sourceTree = "<group>"; };
+		03EF76461CB2B4CF0002381F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03EF76161CB2B4CE0002381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF76321CB2B4CE0002381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF763D1CB2B4CF0002381F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EF76101CB2B4CE0002381F = {
+			isa = PBXGroup;
+			children = (
+				03EF761B1CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */,
+				03EF76381CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests */,
+				03EF76431CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests */,
+				03EF761A1CB2B4CE0002381F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03EF761A1CB2B4CE0002381F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03EF76191CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather.app */,
+				03EF76351CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests.xctest */,
+				03EF76401CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03EF761B1CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */ = {
+			isa = PBXGroup;
+			children = (
+				03EF761F1CB2B4CE0002381F /* AppDelegate.h */,
+				03EF76201CB2B4CE0002381F /* AppDelegate.m */,
+				03EF76221CB2B4CE0002381F /* FirstViewController.h */,
+				03EF76231CB2B4CE0002381F /* FirstViewController.m */,
+				03EF76251CB2B4CE0002381F /* SecondViewController.h */,
+				03EF76261CB2B4CE0002381F /* SecondViewController.m */,
+				03EF76281CB2B4CE0002381F /* Main.storyboard */,
+				03EF762B1CB2B4CE0002381F /* Assets.xcassets */,
+				03EF762D1CB2B4CE0002381F /* LaunchScreen.storyboard */,
+				03EF76301CB2B4CE0002381F /* Info.plist */,
+				03EF761C1CB2B4CE0002381F /* Supporting Files */,
+			);
+			path = cz.zcu.fav.kiv.mkz.weather;
+			sourceTree = "<group>";
+		};
+		03EF761C1CB2B4CE0002381F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03EF761D1CB2B4CE0002381F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03EF76381CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				03EF76391CB2B4CE0002381F /* cz_zcu_fav_kiv_mkz_weatherTests.m */,
+				03EF763B1CB2B4CE0002381F /* Info.plist */,
+			);
+			path = cz.zcu.fav.kiv.mkz.weatherTests;
+			sourceTree = "<group>";
+		};
+		03EF76431CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03EF76441CB2B4CF0002381F /* cz_zcu_fav_kiv_mkz_weatherUITests.m */,
+				03EF76461CB2B4CF0002381F /* Info.plist */,
+			);
+			path = cz.zcu.fav.kiv.mkz.weatherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03EF76181CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EF76491CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weather" */;
+			buildPhases = (
+				03EF76151CB2B4CE0002381F /* Sources */,
+				03EF76161CB2B4CE0002381F /* Frameworks */,
+				03EF76171CB2B4CE0002381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cz.zcu.fav.kiv.mkz.weather;
+			productName = cz.zcu.fav.kiv.mkz.weather;
+			productReference = 03EF76191CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03EF76341CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EF764C1CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weatherTests" */;
+			buildPhases = (
+				03EF76311CB2B4CE0002381F /* Sources */,
+				03EF76321CB2B4CE0002381F /* Frameworks */,
+				03EF76331CB2B4CE0002381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EF76371CB2B4CE0002381F /* PBXTargetDependency */,
+			);
+			name = cz.zcu.fav.kiv.mkz.weatherTests;
+			productName = cz.zcu.fav.kiv.mkz.weatherTests;
+			productReference = 03EF76351CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03EF763F1CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03EF764F1CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weatherUITests" */;
+			buildPhases = (
+				03EF763C1CB2B4CF0002381F /* Sources */,
+				03EF763D1CB2B4CF0002381F /* Frameworks */,
+				03EF763E1CB2B4CF0002381F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03EF76421CB2B4CF0002381F /* PBXTargetDependency */,
+			);
+			name = cz.zcu.fav.kiv.mkz.weatherUITests;
+			productName = cz.zcu.fav.kiv.mkz.weatherUITests;
+			productReference = 03EF76401CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03EF76111CB2B4CE0002381F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MKZ;
+				TargetAttributes = {
+					03EF76181CB2B4CE0002381F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					03EF76341CB2B4CE0002381F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 03EF76181CB2B4CE0002381F;
+					};
+					03EF763F1CB2B4CF0002381F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 03EF76181CB2B4CE0002381F;
+					};
+				};
+			};
+			buildConfigurationList = 03EF76141CB2B4CE0002381F /* Build configuration list for PBXProject "cz.zcu.fav.kiv.mkz.weather" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03EF76101CB2B4CE0002381F;
+			productRefGroup = 03EF761A1CB2B4CE0002381F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03EF76181CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */,
+				03EF76341CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weatherTests */,
+				03EF763F1CB2B4CF0002381F /* cz.zcu.fav.kiv.mkz.weatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03EF76171CB2B4CE0002381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EF762F1CB2B4CE0002381F /* LaunchScreen.storyboard in Resources */,
+				03EF762C1CB2B4CE0002381F /* Assets.xcassets in Resources */,
+				03EF762A1CB2B4CE0002381F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF76331CB2B4CE0002381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF763E1CB2B4CF0002381F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03EF76151CB2B4CE0002381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EF76271CB2B4CE0002381F /* SecondViewController.m in Sources */,
+				03EF76211CB2B4CE0002381F /* AppDelegate.m in Sources */,
+				03EF76241CB2B4CE0002381F /* FirstViewController.m in Sources */,
+				03EF761E1CB2B4CE0002381F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF76311CB2B4CE0002381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EF763A1CB2B4CE0002381F /* cz_zcu_fav_kiv_mkz_weatherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03EF763C1CB2B4CF0002381F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EF76451CB2B4CF0002381F /* cz_zcu_fav_kiv_mkz_weatherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03EF76371CB2B4CE0002381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EF76181CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */;
+			targetProxy = 03EF76361CB2B4CE0002381F /* PBXContainerItemProxy */;
+		};
+		03EF76421CB2B4CF0002381F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03EF76181CB2B4CE0002381F /* cz.zcu.fav.kiv.mkz.weather */;
+			targetProxy = 03EF76411CB2B4CF0002381F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03EF76281CB2B4CE0002381F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03EF76291CB2B4CE0002381F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03EF762D1CB2B4CE0002381F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03EF762E1CB2B4CE0002381F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03EF76471CB2B4CF0002381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03EF76481CB2B4CF0002381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03EF764A1CB2B4CF0002381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03EF764B1CB2B4CF0002381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weather/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		03EF764D1CB2B4CF0002381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cz.zcu.fav.kiv.mkz.weather.app/cz.zcu.fav.kiv.mkz.weather";
+			};
+			name = Debug;
+		};
+		03EF764E1CB2B4CF0002381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cz.zcu.fav.kiv.mkz.weather.app/cz.zcu.fav.kiv.mkz.weather";
+			};
+			name = Release;
+		};
+		03EF76501CB2B4CF0002381F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cz.zcu.fav.kiv.mkz.weather;
+			};
+			name = Debug;
+		};
+		03EF76511CB2B4CF0002381F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = cz.zcu.fav.kiv.mkz.weatherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.cerny.cz-zcu-fav-kiv-mkz-weatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = cz.zcu.fav.kiv.mkz.weather;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03EF76141CB2B4CE0002381F /* Build configuration list for PBXProject "cz.zcu.fav.kiv.mkz.weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EF76471CB2B4CF0002381F /* Debug */,
+				03EF76481CB2B4CF0002381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03EF76491CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EF764A1CB2B4CF0002381F /* Debug */,
+				03EF764B1CB2B4CF0002381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03EF764C1CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EF764D1CB2B4CF0002381F /* Debug */,
+				03EF764E1CB2B4CF0002381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		03EF764F1CB2B4CF0002381F /* Build configuration list for PBXNativeTarget "cz.zcu.fav.kiv.mkz.weatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03EF76501CB2B4CF0002381F /* Debug */,
+				03EF76511CB2B4CF0002381F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03EF76111CB2B4CE0002381F /* Project object */;
+}
