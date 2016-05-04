@@ -7,10 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataHandler.h"
+#import "NetworkHandler.h"
+#import "LocationHandler.h"
+#import "Utils.h"
+#import "Constants.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow * window;
+
+@property (strong, nonatomic) DataHandler * dataHandler;
+@property (strong, nonatomic) NetworkHandler * networkHandler;
+@property (strong, nonatomic) LocationHandler * locationHandler;
+
+
+-(void)showMessage:(NSString *)message withHeader:(NSString *) header andButton:(NSString *) button;
 
 
 @end

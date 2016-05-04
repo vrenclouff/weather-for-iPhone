@@ -8,14 +8,30 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
 
+
 @implementation AppDelegate
 
+@synthesize dataHandler;
+@synthesize networkHandler;
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+//    [self clearUserDefaults];
+    if (![Utils dataForKey: CITY]) [Utils saveDataToMem: DEFAULT_CITY forKey:CITY];
+    [self setDataHandler:[[DataHandler alloc] init]];
+    [self setNetworkHandler:[[NetworkHandler alloc] init]];
+    [self setLocationHandler:[[LocationHandler alloc] init]];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+        
     // Override point for customization after application launch.
     return YES;
 }
@@ -40,6 +56,44 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)showMessage:(NSString *)message withHeader:(NSString *) header andButton:(NSString *) button
+{
+    
+    UIAlertController * alert=   [UIAlertController
+                                  alertControllerWithTitle:header
+                                  message:message
+                                  preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* yesButton = [UIAlertAction
+                                actionWithTitle:button
+                                style:UIAlertActionStyleDefault
+                                handler:nil];
+    
+    
+    [alert addAction:yesButton];
+    
+    
+    [[self topMostController] presentViewController:alert animated:YES completion:nil];
+}
+
+- (UIViewController*) topMostController
+{
+    UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
+    
+    return topController;
+}
+
+-(void) clearUserDefaults
+{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:CITY];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:LOCATION];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:DEGREE];
 }
 
 @end
