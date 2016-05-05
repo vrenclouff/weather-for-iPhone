@@ -15,6 +15,8 @@
     CLLocationManager *locationManager;
 }
 
+// prekryty konstruktor, ktery nastavuje managera pro kolalizovani
+
 -(id) init
 {
     self = [super init];
@@ -30,6 +32,8 @@
     return self;
 }
 
+//  spusti vyhledavani pozice
+
 -(void) startLocation
 {
     if ([CLLocationManager locationServicesEnabled])
@@ -38,6 +42,9 @@
 }
 
 #pragma mark - CLLocationManagerDelegate
+
+//  delegate volajici se pri uspesnem lokalizovani
+//  vytvori notifikaci o zmene mesta pomoci lokalizace
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
 {
@@ -53,6 +60,8 @@
     }
 }
 
+//  delegate volajici se pri neuspesnem lokalizovani
+//  vypne prepinac na lokalizovani a posle notifikaci o zmene mesta s parametrem nil
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {

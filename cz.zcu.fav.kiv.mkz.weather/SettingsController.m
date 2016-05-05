@@ -16,6 +16,8 @@
 }
 
 
+//  metoda, ktera se vola pri spusteni okna
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,15 +36,20 @@
     
 }
 
+// nastaveni status baru na cernou barvu
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleDefault;
 }
 
+
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:YES];
     [super viewWillAppear:animated];
 }
+
+
 - (void)viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [super viewWillAppear:animated];
@@ -53,11 +60,16 @@
     [super didReceiveMemoryWarning];
 }
 
+//  filtruje data pri vyhledavani mesta
+//  vyhledavani zacne az po druhem pismenu
+
 - (void)filterContentForSearchText:(NSString *)searchText
 {
     if (searchText.length < 2) return;
     searchResults = [[APP_DELEGATE dataHandler] searchCities:searchText];
 }
+
+//  prekresleni grafiky
 
 - (void) reloadData
 {
@@ -72,11 +84,15 @@
 
 #pragma mark --- BUTTON DELEGATE ---
 
+//  event na prepinac aktualni lokace
+
 - (IBAction)useCurrentLocation
 {
     [Utils saveDataToMem:[NSNumber numberWithBool:[self.currentLocationSwitch isOn]] forKey:LOCATION];
     [[APP_DELEGATE locationHandler] startLocation];
 }
+
+//  event na prepinac jednotek teploty
 
 - (IBAction)changeUnitTemperature
 {
@@ -85,10 +101,14 @@
 
 #pragma mark --- TABLES SOURCE AND DELEGATE ---
 
+//  delegate pro tabulku - vraci pocet radku v tabulce
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [searchResults count];
 }
+
+// delegate pro tabulku - vraci radky v tabulce
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -106,6 +126,8 @@
     
 }
 
+// delegate pro tabulku - vola se pri vybrani mesta z tabulky
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString * city = (NSString *) [[(CityTableCell *)[tableView cellForRowAtIndexPath:indexPath] cityLabel] text];
@@ -117,12 +139,15 @@
 
 #pragma mark --- SEARCHBAR DELEGATE ---
 
+// delegate pro vyhledavaci bar - vola se pri klinuti na vyhledavaci bar
+
 - (BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
 {
     [[self tableAutoComplete] setHidden:NO];
     return YES;
 }
 
+//  delegate pro vyhledavaci bar - vola se pri zadavani textu
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
@@ -130,6 +155,8 @@
     [self.tableAutoComplete reloadData];
     
 }
+
+//  delegate pro vyhledavaci bar - vola se pri skrolovani v tabulce
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {

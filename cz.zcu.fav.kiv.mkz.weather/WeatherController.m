@@ -15,6 +15,9 @@
 
 @implementation WeatherController
 
+//  metoda volajici se pri nacitani okna
+//  nastavuje posluchace na zmenu dat a sitove aktivite
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
@@ -35,6 +38,8 @@
     
 }
 
+//  nastavuje status bar na bilou barvu
+
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
@@ -50,6 +55,9 @@
     [self refreshCity];
 }
 
+//  metoda volajici se pri sitove aktivite
+//  nastavu rotujici se kolecko uprostred obrazovky
+//  nastavu alpha kanal pro pozadi
 
 -(void) loadingBar: (NSNumber *) on
 {
@@ -67,6 +75,8 @@
         [self.loading stopAnimating];
     }
 }
+
+//  prekresleni dat
 
 -(void)reloadData
 {
@@ -87,6 +97,8 @@
     [self fillView:[self cellFourth] withData: [dataHandler weatherDataForDay: @4]];
 }
 
+// prekresleni plochy nasledujicich dnu
+
 -(void) fillView:(UIView *) view withData:(NSDictionary *) data
 {
     
@@ -103,6 +115,8 @@
 }
 
 #pragma mark --- BUTTON DELEGATE ---
+
+//  event pro tlacitko aktualizace dat
 
 -(IBAction)refreshCity
 {

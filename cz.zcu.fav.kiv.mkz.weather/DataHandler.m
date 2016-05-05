@@ -11,8 +11,6 @@
 #import "Utils.h"
 
 #define DEFAULT_MARK                (NSString *) @"--"
-#define FIRST_DEFAULT_TIME_IN_DAY   (NSString *) @"12:00"
-#define SECOND_DEFAULT_TIME_IN_DAY  (NSString *) @"13:00"
 
 @interface DataHandler ()
 
@@ -28,17 +26,20 @@
     BOOL virtualData;
 }
 
+//  prekryty defaulutni konstruktor
+//  inicializuje se zde aktualni den a nacita se aktualni mesto 
 
 -(id) init {
     self = [super init];
     if (self){
         [self loadCities];
-        weatherData = [NSMutableDictionary dictionary];
         actualDate = [[NSDate alloc] init];
         actualCity = [Utils dataForKey:CITY];
     }
     return self;
 }
+
+//  nacitani mest z testoveho souboru
 
 -(void) loadCities {
     
@@ -50,6 +51,8 @@
  
 }
 
+//  metoda pro vyhledavani mest (vyuziva se pri autocomplete)
+
 -(NSArray *) searchCities: (NSString *) name
 {
     if (!name) return [NSArray array];
@@ -57,6 +60,8 @@
     NSArray * filterCities = [citiesData filteredArrayUsingPredicate:predicate];
     return filterCities;
 }
+
+// parsuje syrova prijata data do datove struktury pro zobrazeni
 
 -(NSDictionary *) parseRawData: (NSDictionary *) rawData
 {
@@ -101,6 +106,8 @@
     return result;
 }
 
+//  nastaveni aktualniho mesta a ulozeni do pameti
+
 -(void) setActualCity:(NSString *) city
 {
     if (!city) return;
@@ -108,10 +115,15 @@
     [Utils saveDataToMem:city forKey:CITY];
 }
 
+//  vraci aktualni mesto
+
 -(NSString *) actualCity
 {
     return actualCity;
 }
+
+// metoda pri zpracovani prijatych dat
+// pokud prisly data, zpracuje je, pripadne nastavi defaulutni data
 
 -(void) dataReceived:(NSDictionary *) rawData {
     
@@ -131,6 +143,8 @@
     [self setActualCity:city];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"DataChanged" object:nil];
 }
+
+//  vraci datovou strukturu pro zvoleny den
 
 -(NSDictionary *)weatherDataForDay:(NSNumber *)day {
     NSDictionary * result;
@@ -154,6 +168,8 @@
     }
     return result;
 }
+
+//  vytvora defaulutni data
 
 -(NSMutableDictionary *) createDefaultData
 {

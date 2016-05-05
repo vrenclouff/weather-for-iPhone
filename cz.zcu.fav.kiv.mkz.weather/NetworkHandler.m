@@ -15,6 +15,10 @@
 
 @implementation NetworkHandler
 
+//  konstruktor, ktery nastavuje posluchace na zmenu mesta
+//  CityChanged - posluchac naslouchajici na zmenu mesta podle nazvu
+//  CityChangedByLocation - posluchat naslouchajici na zmenu mesta podle GPS souradnic
+
 -(id) init
 {
     self = [super init];
@@ -32,6 +36,10 @@
     }
     return self;
 }
+
+//  metoda posilajici dotazy do site
+//  obsahuje kontrolu dostupnisti site
+//  nastavuje otacejici se kolecko pri sitove aktivite
 
 -(void) sendRequestByURL: (NSString *) url
 {
@@ -56,12 +64,16 @@
     }
 }
 
+// vytvari URL adresu pro nazev mesta
+
 -(void)reloadDataWithActualCity:(NSString * )city
 {
     if (!city) return;
     NSString * url = [NSString stringWithFormat:@"%@?APPID=%@&q=%@&units=%@", apiUrl, apiKey, city, [Utils translateUnit:[Utils dataForKey:DEGREE]]];
     [self sendRequestByURL:url];
 }
+
+// vytvari URL adresu pro data ziskane z GPS
 
 -(void)reloadDataWithLocation:(CLLocation *) currentLocation
 {
@@ -73,6 +85,8 @@
     NSString * url = [NSString stringWithFormat:@"%@?APPID=%@&lat=%@&lon=%@&units=%@", apiUrl, apiKey, latitude, lognitude, [Utils translateUnit:[Utils dataForKey:DEGREE]]];
     [self sendRequestByURL:url];
 }
+
+//  kontrola dostupnosti site
 
 -(BOOL)networkAccess
 {

@@ -19,6 +19,9 @@
 @synthesize dataHandler;
 @synthesize networkHandler;
 
+
+//  metoda spoustejici se pri zobrazovani uvitaci obrazovky
+
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
 //    [self clearUserDefaults];
@@ -29,6 +32,8 @@
     
     return YES;
 }
+
+// metoda spustejici se po uvodni obrazovce
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         
